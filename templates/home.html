@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏠 PropertiEase </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-cyan-600 to-blue-800 sticky top-0">
+      <div class="lg:flex lg:justify-between items-center py-3 lg:px-3">
+        <div class="left py-3 lg:py-0">
+          <a href="/"></a>
+            <h1 class="text-2xl font-bold ">🏠 PropertiEase   </h1></a
+          >
+        </div>
+        <div class="right flex justify-center mb-4 lg:mb-0">
+          <ul class="flex space-x-3 text-white font-bold text-md px-5">
+            <li><a href="/">Home</a></li>
+            <li><a href="/buy"> Buy</a></li>
+ 
+            <li><a href="/estimate_cost">Estimate Cost</a></li>
+            <li><a href="/about"> about</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <div class="input flex justify-center">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="bg-gray-200 placeholder-gray-400 rounded-lg px-2 py-2 w-96 lg:w-96 md:w-96 outline-none text-black"
+            />
+          </div>
+          <div class="flex justify-center"></div>
+        </div>
+      </div>
+    </nav>
+   
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-[80vh] flex items-center justify-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994');
+      "
+    >
+
+
+   <div
+  class="bg-black bg-opacity-50 w-[100%] h-[100%] m-auto flex flex-col items-center justify-center rounded-lg text-white text-center"
+>
+  <h2 class="text-4xl font-bold mb-4">Find Your Dream Home</h2>
+  <p class="text-lg mb-6">
+    Search from thousands of properties across India
+  </p>
+</div>
+    </section>
+
+<!-- Our Services Section -->
+ <section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-12 underline decoration-green-600"> Our Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Service Card 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image1.png') }}" alt="Property Dealing" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Property Dealing</h3>
+        <p class="text-gray-500 text-sm">Assistance with property buying and investment decisions.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image2.png') }}" alt="Property Selling" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Property Selling</h3>
+        <p class="text-gray-500 text-sm">Professional support to sell your property at the best price.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image3.png') }}" alt="Home Loan" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Home Loan Assistance</h3>
+        <p class="text-gray-500 text-sm">Guidance on home loans from trusted banks and institutions.</p>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image4.png') }}" alt="Interior Designing" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Interior Designing</h3>
+        <p class="text-gray-500 text-sm">Make your space beautiful and functional with our designers.</p>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image5.png') }}" alt="Property Registration" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Property Registration</h3>
+        <p class="text-gray-500 text-sm">Complete legal assistance for property documentation and registry.</p>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+        <img src="{{ url_for('static', filename='images/image6.png') }}" alt="Location Consultancy" class="mx-auto mb-4" />
+        <h3 class="text-xl font-semibold text-gray-700 mb-2">Location Consultancy</h3>
+        <p class="text-gray-500 text-sm">We help you pick the right area for your budget and lifestyle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-gray-600  flex   body-font bg-gradient-to-r from-cyan-600 to-blue-800">
+    <div class="container px-5 py-5 mx-auto flex items-center justify-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <span class="text-xl font-bold">PropertiEase</span></a>
+            <p class="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">All Rights Reserved <a class="text-gray-100 ml-1" rel="noopener noreferrer" href="/" target="_blank">@2025</a>
+            
+            </p></div></footer>
+     
+  </body>
+</html>

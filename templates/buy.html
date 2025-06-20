@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Properties - PropertiEase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-cyan-600 to-blue-800 sticky top-0">
+      <div class="lg:flex lg:justify-between items-center py-3 lg:px-3">
+        <div class="left py-3 lg:py-0">
+          <a href="/"></a>
+            <h1 class="text-2xl font-bold ">🏠 PropertiEase   </h1></a
+          >
+        </div>
+        <div class="right flex justify-center mb-4 lg:mb-0">
+          <ul class="flex space-x-3 text-white font-bold text-md px-5">
+            <li><a href="/">Home</a></li>
+            <li><a href="/buy"> Buy</a></li>
+    
+            
+            <li><a href="/estimate_cost">Estimate Cost</a></li>
+            <li><a href="/about"> about</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <div class="input flex justify-center">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="bg-gray-200 placeholder-gray-400 rounded-lg px-2 py-2 w-96 lg:w-96 md:w-96 outline-none text-black"
+            />
+          </div>
+          <div class="flex justify-center"></div>
+        </div>
+      </div>
+    </nav>
+   
+   
+    <!-- Title -->
+    <header class="text-center py-10">
+      <h2 class="text-3xl font-bold text-gray-800">
+        🏡 Available Homes in Bangalore
+      </h2>
+      <p class="text-gray-500 mt-2">
+        Explore handpicked properties with best prices
+      </p>
+    </header>
+
+    <!-- Listings Grid -->
+<!-- Listings Grid -->
+<section class="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home1.png') }}" class="w-full h-56 object-cover" alt="home" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">3 BHK Apartment</h3>
+      <p class="text-gray-500">Whitefield, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹95 Lacs</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home2.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">2 BHK Flat</h3>
+      <p class="text-gray-500">Electronic City, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹68 Lacs</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home3.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">Villa with Garden</h3>
+      <p class="text-gray-500">Sarjapur Road, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹1.5 Cr</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home3.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">Studio Apartment</h3>
+      <p class="text-gray-500">Indiranagar, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹48 Lacs</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/image4.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">4 BHK Luxury Villa hai</h3>
+      <p class="text-gray-500">Hebbal, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹2.1 Cr</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/image5.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">Independent House</h3>
+      <p class="text-gray-500">Bannerghatta, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹1.3 Cr</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home1.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">3 BHK Penthouse</h3>
+      <p class="text-gray-500">Jayanagar, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹1.8 Cr</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home2.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">2 BHK with Balcony</h3>
+      <p class="text-gray-500">Marathahalli, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹72 Lacs</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/home3.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">3 BHK Garden Flat</h3>
+      <p class="text-gray-500">HSR Layout, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹89 Lacs</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+    <img src="{{ url_for('static', filename='homes/image5.png') }}" class="w-full h-56 object-cover" />
+    <div class="p-4">
+      <h3 class="text-xl font-semibold text-gray-700">4 BHK Duplex</h3>
+      <p class="text-gray-500">Koramangala, Bangalore</p>
+      <p class="text-green-600 font-bold text-lg mt-2">₹2.4 Cr</p>
+    </div>
+  </div>
+
+</section>
+
+ 
+<footer class="text-gray-600  flex   body-font bg-gradient-to-r from-cyan-600 to-blue-800">
+    <div class="container px-5 py-5 mx-auto flex items-center justify-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <span class="text-xl font-bold">PropertiEase</span></a>
+            <p class="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">All Rights Reserved <a class="text-gray-100 ml-1" rel="noopener noreferrer" href="/" target="_blank">@2025</a>
+            
+            </p></div></footer>
+  </body>
+</html>

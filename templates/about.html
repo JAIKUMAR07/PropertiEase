@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - PropertiEase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-cyan-600 to-blue-800 sticky top-0">
+      <div class="lg:flex lg:justify-between items-center py-3 lg:px-3">
+        <div class="left py-3 lg:py-0">
+          <a href="/"></a>
+            <h1 class="text-2xl font-bold ">🏠 PropertiEase   </h1></a
+          >
+        </div>
+        <div class="right flex justify-center mb-4 lg:mb-0">
+          <ul class="flex space-x-3 text-white font-bold text-md px-5">
+            <li><a href="/">Home</a></li>
+            <li><a href="/buy"> Buy</a></li>
+      
+           
+            <li><a href="/estimate_cost">Estimate Cost</a></li>
+              <li><a href="/about"> about</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <div class="input flex justify-center">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="bg-gray-200 placeholder-gray-400 rounded-lg px-2 py-2 w-96 lg:w-96 md:w-96 outline-none text-black"
+            />
+          </div>
+          <div class="flex justify-center"></div>
+        </div>
+      </div>
+    </nav>
+   
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">
+          About PropertiEase
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          At PropertiEase, we believe everyone deserves their dream space.
+          Whether you're buying, selling, renting, or just exploring, our team
+          of real estate experts is here to help you every step of the way.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6 md:flex md:items-center md:gap-12">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src=".{{ url_for('static', filename='images/team.png') }}"
+            class="rounded-lg shadow-md w-full"
+            alt="Our Team"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">🏗️ Our Mission</h3>
+          <p class="text-gray-600 mb-4">
+            To provide trustworthy, personalized real estate solutions that
+            simplify your journey in the property market. We’re committed to
+            transparency, professionalism, and building lasting relationships.
+          </p>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>Customer-first approach</li>
+            <li>Expert guidance in buying, selling, and financing</li>
+            <li>Quality partnerships with builders and banks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-10">
+          💡 Our Core Values
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold text-green-600 mb-2">Integrity</h4>
+            <p class="text-gray-600 text-sm">
+              We act with honesty, always putting clients’ interests first.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold text-green-600 mb-2">
+              Commitment
+            </h4>
+            <p class="text-gray-600 text-sm">
+              We go the extra mile to ensure your satisfaction and success.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold text-green-600 mb-2">
+              Innovation
+            </h4>
+            <p class="text-gray-600 text-sm">
+              We use tech to make real estate smarter and simpler.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-50 rounded shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold text-green-600 mb-2">Trust</h4>
+            <p class="text-gray-600 text-sm">
+              We build long-term trust with every deal and interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   
+<footer class="text-gray-600  flex   body-font bg-gradient-to-r from-cyan-600 to-blue-800">
+    <div class="container px-5 py-5 mx-auto flex items-center justify-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <span class="text-xl font-bold">PropertiEase</span></a>
+            <p class="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">All Rights Reserved <a class="text-gray-100 ml-1" rel="noopener noreferrer" href="/" target="_blank">@2025</a>
+            
+            </p></div></footer>
+  </body>
+</html>
