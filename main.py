@@ -52,11 +52,12 @@ def predict():
                                   columns=['location', 'total_sqft', 'bath', 'bhk', 'balcony'])
 
         prediction = pipe.predict(input_data)[0] * 1e5
-        return f"💰 Estimated Price: ₹{np.round(prediction, 2)}"
+
+        return render_template('result.html', price=prediction)
+
     except Exception as e:
         return f"⚠️ Prediction failed: {e}"
 
-# Handle 404 Errors
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
