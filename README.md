@@ -2,7 +2,7 @@
 
 PropertiEase is a Flask-based web application designed to help users **browse property listings**, **sell their property**, and **estimate property prices** using a machine learning model.
 
-# core feature is **estimate property prices** using a machine learning model.
+core feature is **estimate property prices** using a machine learning model.
 
 ---
 
